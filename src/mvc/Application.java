@@ -27,5 +27,8 @@ public class Application {
 	
 	}
 	
+	//ovdje dodati buttone, layoute, text polja
+	
+	
 	
 }

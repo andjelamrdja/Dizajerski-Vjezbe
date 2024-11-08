@@ -18,7 +18,7 @@ public class DrawingView extends JPanel {
 	//trebamo imati neku petlju koja prolazi kroz listu i svaki oblik iscrtava
 	
 	public void paint(Graphics g) {
-		Iterator<Point> it = model.getShapes().iterator();
+		Iterator<Shape> it = model.getShapes().iterator();
 		while(it.hasNext())
 			it.next().draw(g);
 	}

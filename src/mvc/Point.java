@@ -3,10 +3,14 @@ package mvc;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Point {
+public class Point extends Shape{
 	private int x;
 	private int y;
 	private Color color;
+	
+	public Point() {
+		
+	}
 	
 	public Point(int x, int y, Color color) {
 		this.x = x;
@@ -20,11 +24,18 @@ public class Point {
 		g.drawLine(x-1, y, x+1, y);
 		g.drawLine(x, y+1, x, y-1);
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + ", color=" + color + "]";
+	}
 
 
 	public int getX() {
 		return x;
 	}
+
 
 	public void setX(int x) {
 		this.x = x;
