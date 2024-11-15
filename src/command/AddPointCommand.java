@@ -13,7 +13,6 @@ public class AddPointCommand implements Command {
 	private Point point;
 	
 	public AddPointCommand(DrawingModel model, Point point) {
-		super();
 		this.model = model;
 		this.point = point;
 	}
